@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "admin-6421601b2aa50b3f6673a74e",
+      "script": "npx",
+      "interpreter": "none",
+      "args": "serve -s build/ -l 34139"
+    }
+  ]
+}

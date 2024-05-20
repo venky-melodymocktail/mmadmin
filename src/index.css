@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.revealModalLeft {
+  display: block;
+
+  animation: revealModalLeft 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+.revealModalTop {
+  display: block;
+
+  animation: revealModalTop 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.revealModalRight {
+  display: block;
+
+  animation: revealModalRight 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+.revealModalBottom {
+  display: block;
+
+  animation: revealModalBottom 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+@keyframes revealModalLeft {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes revealModalTop {
+  0% {
+    transform: translate(0, -100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes revealModalRight {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes revealModalBottom {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.exitModalLeft {
+  display: block;
+
+  animation: exitModalLeft 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.exitModalTop {
+  display: block;
+
+  animation: exitModalTop 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+.exitModalRight {
+  display: block;
+
+  animation: exitModalRight 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+.exitModalBottom {
+  display: block;
+
+  animation: exitModalBottom 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0s;
+}
+
+@keyframes exitModalLeft {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes exitModalTop {
+  100% {
+    transform: translate(0, -100%);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes exitModalRight {
+  100% {
+    transform: translate(100%, 0);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes exitModalBottom {
+  100% {
+    transform: translate(0, 100%);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+
+.stripe-button {
+  background: #5469d4;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  margin-top: 10px;
+}
+
+.stripe-button:hover {
+  filter: contrast(115%);
+}
+
+.stripe-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

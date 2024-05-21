@@ -17,7 +17,7 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy the built application from the previous stage
 COPY --from=builder /mmadmin/build /usr/share/nginx/html
 
-COPY nginx.conf /etc/nginx/nginx.conf
+#COPY nginx.conf /etc/nginx/nginx.conf
 
 # Expose port 80
 EXPOSE 80

@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   frontend:
-    image: venkynagidi/admin:one
+    image: adminIMAGE:$BUILD_TAG
     ports:
       - "8088:80"
     networks:

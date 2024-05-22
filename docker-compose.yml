@@ -4,7 +4,7 @@ services:
   frontend:
     image: adminIMAGE:$BUILD_TAG
     ports:
-      - "8088:80"
+      - "8081:80"
     networks:
       - admin-network
 
